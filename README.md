@@ -4,7 +4,7 @@
 
 _This is a [Scimba's Capstone Project](https://scrimba.com/playlist/pbwjrs7) from [React Advanced](https://scrimba.com/learn/react) Course_
 
-_gallerycommerce.netlify.app_
+[gallerycommerce.netlify.app](gallerycommerce.netlify.app)
 
 **Built With:**
 
