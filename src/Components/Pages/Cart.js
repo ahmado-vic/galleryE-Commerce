@@ -11,14 +11,17 @@ function Cart() {
   const [placed, setPlaced] = useState(false);
   const submitRef = useRef();
 
+  //calculate total cart item price per item
   useEffect(() => {
     setTotal(() => cart.map(item => item.price * item.Qty));
   }, [countCartItems]);
 
+  //calculate total cart items prices
   useEffect(() => {
     setTotalCart(() => total.reduce((cur, acc) => cur + acc, 0));
   }, [total]);
 
+  // place order
   const handleSubmit = () => {
     submitRef.current.textContent = 'Loading...';
     setTimeout(() => {

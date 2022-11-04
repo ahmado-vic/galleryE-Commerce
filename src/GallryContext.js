@@ -41,6 +41,7 @@ function GallryContextProvider({ children }) {
     });
   };
 
+  //fetching only 21 photos from api
   useEffect(() => {
     const getPhotos = async () => {
       const response = await axios.get('https://picsum.photos/v2/list');
@@ -59,6 +60,7 @@ function GallryContextProvider({ children }) {
     getPhotos();
   }, []);
 
+  // calculate cartItmes count
   useEffect(() => {
     setCountCartItems(() =>
       cart.map(item => item.Qty).reduce((curr, acc) => curr + acc, 0)
