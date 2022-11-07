@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Cart from './Pages/Cart';
 
 function CartItems({ setCart, item, total, index }) {
   const [hovered, setHovered] = useState(false);
